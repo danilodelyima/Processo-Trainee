@@ -1,0 +1,62 @@
+﻿--01 Alterar o salário do empregado de código 3 para 28000.
+UPDATE empresa.empregado SET salario = 28000 WHERE codEmp = 3
+SELECT * FROM empresa.empregado WHERE codEmp = 3
+
+--02 Obter nomes de empregados com salario > 30000.
+SELECT empregado.nome FROM empresa.empregado WHERE salario > 30000
+
+
+--03 Obter nomes de empregados que trabalham no projeto 'Transmogrifador'.
+SELECT empregado.nome FROM empresa.trabalhaEm 
+inner JOIN empresa.empregado
+ON trabalhaEm.codemp = empregado.codemp
+inner JOIN empresa.projeto
+ON trabalhaEm.codproj = projeto.codproj
+where projeto.titulo = 'Transmogrifador'
+
+--04 Obter nomes e endereços de todos os empregados que trabalham no departamento de 'Pesquisa'. Use INNER JOIN para esta consulta. 
+SELECT empregado.nome, empregado.endereco FROM empresa.empregado
+JOIN empresa.departamento
+ON departamento.nome = 'Pesquisa'
+
+--05 Obter nomes de empregados que começam com a letra 'A'. Dica: use LIKE.
+SELECT empregado.nome FROM empresa.empregado WHERE nome LIKE 'A%'
+
+--06 Obter nome dos empregados em letra maiuscula
+-- http://www.postgresql.org/docs/9.3/static/functions-string.html
+SELECT upper(empregado.nome) FROM empresa.empregado
+
+--07 Obter nome dos empregados em letra maiuscula
+
+--08 Alterar no nome dos empregados para letra maiuscula
+
+UPDATE empresa.empregado SET nome = upper(empregado.nome)
+SELECT empregado.nome FROM empresa.empregado
+
+--09 Obter o nome dos empregados com a letra inicial em maiusculo e as demais em minusculo
+
+SELECT substring(empregado.nome from 1 for 1) || lower(substring(empregado.nome from 2 for char_length(empregado.nome))) FROM empresa.empregado 
+
+--10 Obter o empregado mais velho
+
+SELECT empregado.dataNasc FROM empresa.empregado 
+
+--11 Obter o empregado mais novo
+
+--12 Obter os nomes e datas de nascimento dos empregados que fazem aniversário no mês de outubro.
+--   http://www.postgresql.org/docs/9.3/static/functions-datetime.html
+
+--13 Obter os nomes dos empregados nascidos entre as datas 1950-01-01 e 1970-01-01. Dica: use BETWEEN. 
+
+--14 Listar os títulos de projetos em ordem alfabética. Dica: use ORDER BY. 
+
+--15 Listar nomes e horas trabalhadas por empregados no projeto de código 3, em ordem decrescente de horas trabalhadas. 
+
+--16 Obter códigos de empregados que trabalham mais de 10 horas em algum projeto.
+--   O resultado da consulta não deve ter repetições de códigos de empregados.
+--   Dica: use DISTINCT. 
+
+--17 Obter a quantidade de empregados pertencentes ao departamento 4. Dica: consulte funções agregadas do SQL.
+
+--18 Obter, a partir da tabela trabalhaEm, os números mínimo, máximo e médio de horas trabalhadas por empregados em cada projeto.
+--   O resultado deve possuir 4 colunas nomeadas: projeto, minimo, maximo e media.
