@@ -1,0 +1,27 @@
+table{
+	margin-left: 25%;
+}
+
+table, th, td {
+	text-align: center;
+	border: 1.5px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	width: 100px;
+}
+th{
+	padding-bottom: 20px;
+}
+
+.linha, th {
+	height: 35px;
+}
+
+.celula{
+	color: red;
+}
+.espaco{
+	height: 15px;
+}

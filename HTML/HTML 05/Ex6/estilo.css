@@ -1,0 +1,66 @@
+#smile{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	top: 100px;
+	left: 275px;
+	background-color: yellow;
+	border: 5px	solid black;
+	border-radius: 400px;
+}
+.olho{
+	position: absolute;
+	background-color: black;
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+}
+#olho1{
+	top: 100px;
+	left: 85px;
+}
+#olho2{
+	top: 100px;
+	left: 260px;
+}
+
+/*Ações da Boca*/
+.boca{
+	position: absolute;
+	background-color: black;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	width: 150px;
+	height: 20px;
+	top: 295px;
+	left: 125px;
+}
+/*Abrir a boca e manter a boca aberta mesmo após o click*/
+.boca:hover,
+.boca:active{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 200px;
+	left: 125px;
+	background-color: red;
+	border: 5px	solid black;
+	border-radius: 70px;
+}
+/*Mantém o balão invisível*/
+.balao{
+	display: none;
+}
+/*Recebe a invisibilidade e quando clicado sai do none pro inline, ou seja, visível*/
+.boca:active ~ .balao{
+	position: absolute;
+	background-color: white;
+	height: 75px;
+	width: 200px;
+	left: 300px;
+	top: 250px;
+	border-radius: 28px;
+	border:5px solid;
+	border-color: black;
+	display: inline;
+}

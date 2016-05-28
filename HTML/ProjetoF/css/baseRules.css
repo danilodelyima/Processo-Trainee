@@ -1,0 +1,36 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+	font-size: 14px;
+}
+h1{
+	font-size: 46px;
+}
+h2{
+	font-size:26px;
+}
+h3{
+	color: #E1CDAA;
+}
+h4{
+	display: inline;
+	font-size: 16px;
+}
+ul{
+	list-style-type: none;
+}
+li, img{
+	display: inline;
+}
+input, textarea{
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+}
+b, b:hover{
+	color: #E1CDAA;
+}
+a, a:visited, a:active{
+	text-decoration: none;
+	color: white;
+	cursor:default;
+}

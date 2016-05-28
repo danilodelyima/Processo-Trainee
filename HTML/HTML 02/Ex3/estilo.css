@@ -1,0 +1,24 @@
+table{
+	border: 7px outset black;
+	border-collapse: collapse;
+}
+th, td {
+	border: 1.5px solid black;
+	border-collapse: collapse;
+}
+
+.imagem1{
+	width: 358px;
+	height: 207px;
+	padding: 30px;
+}
+.imagem2{
+	width: 252px;
+	height: 201px;
+	padding: 30px;
+}
+.imagem3{
+	width: 238px;
+	height: 115px;
+	padding: 30px;
+}

@@ -1,0 +1,67 @@
+#menu{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 80px;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.7);
+}
+#imagem_top{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 890px;
+}
+
+#portfolio{
+	position: absolute;
+	top: 920px;
+	left: 0px;
+	height: 1087px;
+	width: 100%;
+}
+
+#imagem_sobre{
+	position: absolute;
+	top: 1960px;
+	left: 0px;
+	height: 772px;
+	width: 100%;
+}
+#contato{
+	position: absolute;
+	top: 2705px;
+	left: 0px;
+	height: 823px;
+	width: 100%;
+}
+#section_botao{
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	top: 1400px;
+	left: 0px;
+}
+#footer_pag1{
+	position: absolute;
+	height: 103px;
+	width: 100%;
+	background-color: #252525;
+	color: white;
+	text-align: center;
+	top: 3465px;
+	left: 0px;
+}
+
+#footer_pag2{
+	position: absolute;
+	height: 103px;
+	width: 100%;
+	background-color: #252525;
+	color: white;
+	text-align: center;
+	top: 1750px;
+	left: 0px;
+}

@@ -1,0 +1,146 @@
+body{
+	background-color: #cccccc;
+	color: white;
+	font-family: serif;
+}
+h1,h2,h3, h4, h5, h6{
+	color: black;
+	margin-left: 12px
+}
+h4, h5, h6{
+	font-weight: normal;
+}
+
+p{
+	margin-top: 7px;
+	margin-left: 12px;
+}
+
+#site{
+	background-color: #0000aa;
+	position: relative;
+	top: -10px;
+	left: 25%;
+	width: 680px;
+	height: 1080px; 
+}
+
+#header{
+	background-color: #000077;
+	border-radius: 5px;
+	position: absolute;
+	top: 34px;
+	left: 26px;
+	width: 627px;
+	height: 145px;
+}
+#logo{
+	background-color: #bbbbbb;
+	border-radius: 5px;
+	position: absolute;
+	top: 38px;
+	left: 15px;
+	width: 596px;
+	height: 39px;
+}
+
+#menu{
+	background-color: #bbbbbb;
+	border-radius: 5px;
+	position: absolute;
+	top: 90px;
+	left: 15px;
+	width: 596px;
+	height: 39px;
+}
+
+#banner{
+	background-color: #000077;
+	border-radius: 5px;
+	position: absolute;
+	top: 190px;
+	left: 26px;
+	width: 627px;
+	height: 96px;
+}
+
+#comentario{
+	background-color: #bbbbbb;
+	border-radius: 5px;
+	position: absolute;
+	top: 32px;
+	left: 15px;
+	width: 596px;
+	height: 39px;
+}
+
+#conteudo{
+	background-color: #000077;
+	border-radius: 5px;
+	position: absolute;
+	top: 297px;
+	left: 26px;
+	width: 627px;
+	height: 633px;
+}
+
+#esquerdo{
+	background-color: #bbbbbb;
+	border-radius: 5px;
+	position: absolute;
+	top: 32px;
+	left: 15px;
+	width: 596px;
+	height: 450px;
+}
+.noticia{
+	background-color: #999999;
+	border-radius: 5px;
+	position: absolute;
+	width: 563px;
+	height: 110px;
+}
+#noticia1{
+	top: 95px;
+	left: 15px;
+}
+
+#noticia2{
+	top: 215px;
+	left: 15px;
+}
+
+#noticia3{
+	top: 335px;
+	left: 15px;
+}
+
+#direito{
+	background-color: #bbbbbb;
+	border-radius: 5px;
+	position: absolute;
+	top: 496px;
+	left: 15px;
+	width: 596px;
+	height: 117px;
+}
+
+#footer{
+	background-color: #000077;
+	border-radius: 5px;
+	position: absolute;
+	top: 941px;
+	left: 26px;
+	width: 627px;
+	height: 131px;
+}
+
+#copyright{
+	background-color: #bbbbbb;
+	border-radius: 5px;
+	position: absolute;
+	top: 38px;
+	left: 15px;
+	width: 596px;
+	height: 73px;
+}
