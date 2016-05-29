@@ -22,7 +22,7 @@ ON projeto.codproj = trabalhaEm.codproj
 where projeto.titulo = 'Transmogrifador'
 
 --04 Obter nomes e endereços de todos os empregados que trabalham no departamento de 'Pesquisa'. Use INNER JOIN para esta consulta. 
-SELECT *
+SELECT empregado.nome
  
 FROM empresa.departamento
 INNER JOIN empresa.empregado
