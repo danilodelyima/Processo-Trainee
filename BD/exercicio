@@ -14,18 +14,18 @@ WHERE salario > 30000
 
 --03 Obter nomes de empregados que trabalham no projeto 'Transmogrifador'.
 SELECT empregado.nome 
-FROM empresa.trabalhaEm 
-inner JOIN empresa.empregado
+FROM empresa.empregado
+inner JOIN empresa.trabalhaEm
 ON trabalhaEm.codemp = empregado.codemp
 inner JOIN empresa.projeto
 ON projeto.codproj = trabalhaEm.codproj
-where projeto.titulo = 'Transmogrifador'
+WHERE projeto.titulo = 'Transmogrifador'
 
 --04 Obter nomes e endereços de todos os empregados que trabalham no departamento de 'Pesquisa'. Use INNER JOIN para esta consulta. 
 SELECT empregado.nome
- 
-FROM empresa.departamento
-INNER JOIN empresa.empregado
+
+FROM empresa.empregado
+INNER JOIN empresa.departamento
 ON empregado.codDepto = departamento.codDepto
 WHERE departamento.nome = 'Pesquisa'
 
