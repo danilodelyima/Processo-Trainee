@@ -1,2 +1,5 @@
-var myWindow = document.getElementsByTagName('p');
-console.log(myWindow.value);
+button = document.getElementById('button');
+
+button.addEventListener('click', function(){
+	window.print();
+});
