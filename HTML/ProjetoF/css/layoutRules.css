@@ -7,6 +7,7 @@
 	z-index: 1;
 	background-color: rgba(0,0,0,0.7);
 }
+
 #imagem_top{
 	position: absolute;
 	top: 0px;
@@ -30,6 +31,7 @@
 	height: 772px;
 	width: 100%;
 }
+
 #contato{
 	position: absolute;
 	top: 2705px;
@@ -37,6 +39,7 @@
 	height: 823px;
 	width: 100%;
 }
+
 #section_botao{
 	position: absolute;
 	width: 100%;
@@ -44,6 +47,7 @@
 	top: 1400px;
 	left: 0px;
 }
+
 #footer_pag1{
 	position: absolute;
 	height: 103px;
